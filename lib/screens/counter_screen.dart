@@ -5,7 +5,7 @@ import 'package:getx_demo/widgets/counter_widget.dart';
 
 class CounterScreen extends StatelessWidget {
   //
-  final CounterController counterController = Get.put(CounterController());
+  final CounterService conuterService = Get.put(CounterService());
 
   //
   @override
@@ -27,7 +27,7 @@ class CounterScreen extends StatelessWidget {
           FloatingActionButton(
             child: Icon(Icons.remove),
             onPressed: () {
-              counterController.decrement();
+              conuterService.decrement();
             },
           ),
 
@@ -37,7 +37,7 @@ class CounterScreen extends StatelessWidget {
           FloatingActionButton(
             child: Icon(Icons.add),
             onPressed: () {
-              counterController.increment();
+              conuterService.increment();
             },
           ),
         ],

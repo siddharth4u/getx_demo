@@ -12,25 +12,32 @@ class ColorController extends GetxController {
   final minValue = 0.0;
   final maxValue = 255.0;
 
+  @override
+  void onInit() {
+    super.onInit();
+
+    //
+    everAll([redValue, greenValue, blueValue], updateScafflodColor);
+
+    debounce(redValue, (value) {}, time: Duration(milliseconds: 100));
+  }
+
   //
   void updateRedColor(double newColorvalue) {
     redValue.value = newColorvalue.toInt();
-    updateScafflodColor();
   }
 
   //
   void updateGreenColor(double newColorvalue) {
     greenValue.value = newColorvalue.toInt();
-    updateScafflodColor();
   }
 
   //
   void updateBlueColor(double newColorvalue) {
     blueValue.value = newColorvalue.toInt();
-    updateScafflodColor();
   }
 
-  void updateScafflodColor() {
+  void updateScafflodColor(newValue) {
     scaffoldColor.value = Color.fromRGBO(
       redValue.value,
       greenValue.value,

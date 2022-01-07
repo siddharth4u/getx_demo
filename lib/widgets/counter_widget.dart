@@ -4,14 +4,14 @@ import 'package:get/get.dart';
 
 class CounterWidget extends StatelessWidget {
   //
-  final CounterController counterController = Get.find();
+  final CounterService counterService = Get.find();
 
   //
   @override
   Widget build(BuildContext context) {
     return Obx(
       () => Text(
-        '${counterController.count}',
+        '${counterService.count}',
         style: TextStyle(
           fontSize: 80,
           fontWeight: FontWeight.bold,
