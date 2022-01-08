@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_demo/formValidation/registration_scrren.dart';
+import 'package:getx_demo/modren_validation/login_screen.dart';
 
 import 'color_demo/color_screen.dart';
 import 'counter_app.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RegistrationScreen(),
+      home: LoginScreen(),
     );
   }
 }
