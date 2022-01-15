@@ -12,6 +12,9 @@ import 'navigations/page1.dart';
 import 'navigations/page2.dart';
 import 'screens/counter_screen.dart';
 import 'simple_state/size_demo_screen.dart';
+import 'utils/alert_demo.dart';
+import 'utils/bottom_sheet_demo.dart';
+import 'utils/snack_bar_demo.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,19 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-
-      home: HomePage(),
-
-      //
-      getPages: [
-        GetPage(name: Routes.page1, page: () => Page1()),
-        GetPage(name: Routes.page2, page: () => Page2()),
-        // GetPage(name: '/', page: () => HomePage()),
-      ],
-
-      //
-      unknownRoute: GetPage(name: '/anypage', page: () => NoPage()),
-      defaultTransition: Transition.zoom,
+      home: AlertDemo(),
     );
   }
 }
