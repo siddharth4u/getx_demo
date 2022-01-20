@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "740871910238",
+    "project_id": "fir-test-540e6",
+    "storage_bucket": "fir-test-540e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740871910238:android:bb723948ca150690eb15cf",
+        "android_client_info": {
+          "package_name": "siddh.teach.getx_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740871910238-b44pejbb1l3vljocohbimfos0q4bmqs6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "siddh.teach.getx_demo",
+            "certificate_hash": "ab63d3904ab0d6e841b9e3fd330c4abf92f35964"
+          }
+        },
+        {
+          "client_id": "740871910238-j408hci9290c1dnmhdrr8u3msu6himue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqylj7UKcViwgaymoKCNzJet7r78Gau5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740871910238-j408hci9290c1dnmhdrr8u3msu6himue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
