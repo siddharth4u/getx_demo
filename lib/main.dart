@@ -42,6 +42,9 @@ void main() async {
 
   //
   FirebaseMessaging.onBackgroundMessage(showMessage);
+  
+  String? deviceToken = await FirebaseMessaging.instance.getToken(); 
+  print('Device Token = $deviceToken');
 
   runApp(MyApp());
 }
