@@ -9,6 +9,7 @@ import 'package:firebase_core/firebase_core.dart';
 /*
   This is new Line from me!
   Anshuja completed cloning...
+  Shreya Completed cloning...
   App Settings
   -------------
   1) Install depdendency
@@ -21,7 +22,6 @@ import 'package:firebase_core/firebase_core.dart';
 
   Write the following code
 */
-
 
 void main() async {
   //
@@ -44,13 +44,12 @@ void main() async {
 
   //
   FirebaseMessaging.onBackgroundMessage(showMessage);
-  
-  String? deviceToken = await FirebaseMessaging.instance.getToken(); 
+
+  String? deviceToken = await FirebaseMessaging.instance.getToken();
   print('Device Token = $deviceToken');
 
   runApp(MyApp());
 }
-
 
 //
 Future<void> showMessage(RemoteMessage message) async {
