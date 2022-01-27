@@ -31,6 +31,7 @@ dependencies:
   get: ^4.6.1
   awesome_notifications:
   firebase_messaging:
+  firebase_core:
 
 dev_dependencies:
   flutter_test:

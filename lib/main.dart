@@ -7,6 +7,7 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 /*
+  This is new Line from me!
   App Settings
   -------------
   1) Install depdendency
@@ -38,7 +39,7 @@ void main() async {
   );
 
   //
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
 
   //
   FirebaseMessaging.onBackgroundMessage(showMessage);
@@ -53,7 +54,7 @@ void main() async {
 //
 Future<void> showMessage(RemoteMessage message) async {
   //
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
   //
   await AwesomeNotifications().createNotificationFromJsonData(message.data);
 }
