@@ -48,6 +48,9 @@ void main() async {
   String? deviceToken = await FirebaseMessaging.instance.getToken(); 
   print('Device Token = $deviceToken');
 
+  // subscribe to specific topic
+  FirebaseMessaging.instance.subscribeToTopic('html');
+
   runApp(MyApp());
 }
 
